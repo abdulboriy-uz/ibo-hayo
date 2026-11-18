@@ -1,0 +1,2529 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwMzI4NjI5Mzc0Mjk2NjQ3MTQ1MyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzI0NGE5YTI1NmIwMGU0NjFfaW5kZXguaHRtbC05MTgifSwiZXhwIjoxNzk0NzUzMTIxLCJpYXQiOjE3OTQ3NDk1MjEsImFsZyI6IlJTMjU2In0.NzJy6uVQzvzB5UXCGXpe8WnCkXcOf6ryyCJ5vHrQfBt38C5UJx6ky0vCNsQjPUswdRdoPTM5QZgHlarJkmGPsMTOblKkGgfYhBkkVnRxlP8kaakfnGwj3VLEl8mjMki1Dl-piS47kd7J7oZ2QwBiSPKRVfuue6hEAbYN3ynKyv9hvxCoLU15MSoWNKjNRMEvq3Xi_nZddJRKe2t29bh6ITpiHRbyeSUkCCV09Gi5dt1zxp1X0IVoYYELNsjkeOUfq5rLfITpHKF97EA6bYFcCZWNHWG_6ao1X-ue15bknTWxA4ghm9ecAUohEeU5P8nNWATUL3EKZ3VeB0tJYZaBew","c_244a9a256b00e461_index.html-918")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#d4a373">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="IBO HAYO">
+    <title>IBO HAYO — Nafis Ayollar Liboslari Do'koni</title>
+    <!-- Dynamic PWA Manifest Link -->
+    <link id="pwa-manifest-link" rel="manifest" href="blob:https://43t0py5gugns7rdtimwr049rz1sceu4u8b2gun52vq4e0l62oy-h1018257101.scf.usercontent.goog/5aef0c8e-e154-4ce5-9e70-e4fa9d94dda6">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: {
+                            50: '#FDFBF7',
+                            100: '#F8F4EC',
+                            200: '#EFE6D5',
+                            300: '#E2D2B5',
+                        },
+                        rose: {
+                            dusty: '#C89B9B',
+                            soft: '#F4E8E8',
+                            deep: '#9E6B6B',
+                        },
+                        charcoal: '#2C2A29',
+                        taupe: '#78716C'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Maxsus animatsiyalar va nafis stillar */
+        body {
+            background-color: #FDFBF7;
+            color: #2C2A29;
+            overflow-x: hidden;
+        }
+
+        /* Qushcha uchish va tebranish animatsiyasi */
+        @keyframes birdFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-7px) rotate(-3deg); }
+        }
+
+        @keyframes wingFlap {
+            0%, 100% { transform: scaleY(1) rotate(0deg); }
+            50% { transform: scaleY(0.75) rotate(8deg); }
+        }
+
+        @keyframes musicNoteRise {
+            0% { opacity: 0; transform: translateY(0) scale(0.6); }
+            50% { opacity: 1; transform: translateY(-18px) scale(1); }
+            100% { opacity: 0; transform: translateY(-35px) scale(0.8); }
+        }
+
+        .bird-container {
+            animation: birdFloat 3.5s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        .bird-wing {
+            animation: wingFlap 1.2s ease-in-out infinite;
+            transform-origin: top left;
+        }
+
+        .bird-singing .bird-wing {
+            animation: wingFlap 0.35s ease-in-out infinite;
+        }
+
+        .music-note {
+            animation: musicNoteRise 2.2s ease-out infinite;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F8F4EC;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D6C7B2;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9E6B6B;
+        }
+
+        /* No scrollbar utility for horizontal category scroll on mobile */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Plus Jakarta Sans", sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-bottom-4{bottom:-1rem}.-left-20{left:-5rem}.-left-3{left:-0.75rem}.-right-1{right:-0.25rem}.-right-24{right:-6rem}.-top-1{top:-0.25rem}.-top-2{top:-0.5rem}.-top-24{top:-6rem}.-top-3{top:-0.75rem}.bottom-20{bottom:5rem}.bottom-4{bottom:1rem}.bottom-5{bottom:1.25rem}.left-1{left:0.25rem}.left-3{left:0.75rem}.left-3\.5{left:0.875rem}.left-5{left:1.25rem}.right-1{right:0.25rem}.right-3{right:0.75rem}.right-4{right:1rem}.right-5{right:1.25rem}.top-0{top:0px}.top-1\/2{top:50%}.top-20{top:5rem}.top-32{top:8rem}.bottom-0{bottom:0px}.right-0{right:0px}.top-3{top:0.75rem}.z-40{z-index:40}.z-\[100\]{z-index:100}.z-10{z-index:10}.z-50{z-index:50}.mx-4{margin-left:1rem;margin-right:1rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-3{margin-bottom:0.75rem}.mb-8{margin-bottom:2rem}.ml-0\.5{margin-left:0.125rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-12{margin-top:3rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-8{margin-top:2rem}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mt-1\.5{margin-top:0.375rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.aspect-\[4\/5\]{aspect-ratio:4/5}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-64{height:16rem}.h-7{height:1.75rem}.h-72{height:18rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-full{height:100%}.h-12{height:3rem}.h-14{height:3.5rem}.h-\[92vh\]{height:92vh}.h-fit{height:-moz-fit-content;height:fit-content}.max-h-\[90vh\]{max-height:90vh}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-7{width:1.75rem}.w-72{width:18rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.w-12{width:3rem}.w-14{width:3.5rem}.w-44{width:11rem}.min-w-0{min-width:0px}.max-w-7xl{max-width:80rem}.max-w-\[230px\]{max-width:230px}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.max-w-xs{max-width:20rem}.max-w-5xl{max-width:64rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-8{gap:2rem}.gap-6{gap:1.5rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-visible{overflow:visible}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.rounded-br-none{border-bottom-right-radius:0px}.border{border-width:1px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-b-2{border-bottom-width:2px}.border-dashed{border-style:dashed}.border-cream-200{--tw-border-opacity:1;border-color:rgb(239 230 213 / var(--tw-border-opacity, 1))}.border-cream-200\/70{border-color:rgb(239 230 213 / 0.7)}.border-cream-200\/80{border-color:rgb(239 230 213 / 0.8)}.border-cream-300{--tw-border-opacity:1;border-color:rgb(226 210 181 / var(--tw-border-opacity, 1))}.border-rose-dusty\/40{border-color:rgb(200 155 155 / 0.4)}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-charcoal{--tw-border-opacity:1;border-color:rgb(44 42 41 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-cream-100{--tw-border-opacity:1;border-color:rgb(248 244 236 / var(--tw-border-opacity, 1))}.bg-\[\#229ED9\]\/10{background-color:rgb(34 158 217 / 0.1)}.bg-charcoal{--tw-bg-opacity:1;background-color:rgb(44 42 41 / var(--tw-bg-opacity, 1))}.bg-cream-100{--tw-bg-opacity:1;background-color:rgb(248 244 236 / var(--tw-bg-opacity, 1))}.bg-cream-200{--tw-bg-opacity:1;background-color:rgb(239 230 213 / var(--tw-bg-opacity, 1))}.bg-cream-200\/60{background-color:rgb(239 230 213 / 0.6)}.bg-cream-200\/80{background-color:rgb(239 230 213 / 0.8)}.bg-cream-50\/90{background-color:rgb(253 251 247 / 0.9)}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-rose-deep{--tw-bg-opacity:1;background-color:rgb(158 107 107 / var(--tw-bg-opacity, 1))}.bg-rose-soft{--tw-bg-opacity:1;background-color:rgb(244 232 232 / var(--tw-bg-opacity, 1))}.bg-rose-soft\/60{background-color:rgb(244 232 232 / 0.6)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-\[\#1a73e8\]{--tw-bg-opacity:1;background-color:rgb(26 115 232 / var(--tw-bg-opacity, 1))}.bg-black\/40{background-color:rgb(0 0 0 / 0.4)}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-black\/60{background-color:rgb(0 0 0 / 0.6)}.bg-cream-50{--tw-bg-opacity:1;background-color:rgb(253 251 247 / var(--tw-bg-opacity, 1))}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-\[\#d4a373\]{--tw-gradient-from:#d4a373 var(--tw-gradient-from-position);--tw-gradient-to:rgb(212 163 115 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-black\/45{--tw-gradient-from:rgb(0 0 0 / 0.45) var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-cream-100{--tw-gradient-from:#F8F4EC var(--tw-gradient-from-position);--tw-gradient-to:rgb(248 244 236 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-cream-50{--tw-gradient-to:rgb(253 251 247 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #FDFBF7 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#9E6B6B\]{--tw-gradient-to:#9E6B6B var(--tw-gradient-to-position)}.to-\[\#b5835a\]{--tw-gradient-to:#b5835a var(--tw-gradient-to-position)}.to-cream-50{--tw-gradient-to:#FDFBF7 var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-0\.5{padding:0.125rem}.p-1\.5{padding:0.375rem}.p-2\.5{padding:0.625rem}.p-3\.5{padding:0.875rem}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:0.25rem}.pb-3{padding-bottom:0.75rem}.pl-10{padding-left:2.5rem}.pl-3{padding-left:0.75rem}.pl-9{padding-left:2.25rem}.pr-1{padding-right:0.25rem}.pr-2{padding-right:0.5rem}.pr-4{padding-right:1rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pb-2\.5{padding-bottom:0.625rem}.pt-1{padding-top:0.25rem}.pt-3{padding-top:0.75rem}.pt-3\.5{padding-top:0.875rem}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:"Plus Jakarta Sans", sans-serif}.font-serif{font-family:"Cormorant Garamond", serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[8px\]{font-size:8px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\[1\.12\]{line-height:1.12}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-\[0\.22em\]{letter-spacing:0.22em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.tracking-\[0\.5em\]{letter-spacing:0.5em}.text-\[\#229ED9\]{--tw-text-opacity:1;color:rgb(34 158 217 / var(--tw-text-opacity, 1))}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-charcoal{--tw-text-opacity:1;color:rgb(44 42 41 / var(--tw-text-opacity, 1))}.text-cream-100{--tw-text-opacity:1;color:rgb(248 244 236 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-pink-600{--tw-text-opacity:1;color:rgb(219 39 119 / var(--tw-text-opacity, 1))}.text-rose-deep{--tw-text-opacity:1;color:rgb(158 107 107 / var(--tw-text-opacity, 1))}.text-taupe{--tw-text-opacity:1;color:rgb(120 113 108 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-\[\#4285F4\]{--tw-text-opacity:1;color:rgb(66 133 244 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-cream-300{--tw-text-opacity:1;color:rgb(226 210 181 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.selection\:bg-rose-dusty *::selection{--tw-bg-opacity:1;background-color:rgb(200 155 155 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-rose-dusty::selection{--tw-bg-opacity:1;background-color:rgb(200 155 155 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-\[\#229ED9\]:hover{--tw-border-opacity:1;border-color:rgb(34 158 217 / var(--tw-border-opacity, 1))}.hover\:border-pink-600:hover{--tw-border-opacity:1;border-color:rgb(219 39 119 / var(--tw-border-opacity, 1))}.hover\:bg-\[\#229ED9\]:hover{--tw-bg-opacity:1;background-color:rgb(34 158 217 / var(--tw-bg-opacity, 1))}.hover\:bg-cream-100:hover{--tw-bg-opacity:1;background-color:rgb(248 244 236 / var(--tw-bg-opacity, 1))}.hover\:bg-cream-200:hover{--tw-bg-opacity:1;background-color:rgb(239 230 213 / var(--tw-bg-opacity, 1))}.hover\:bg-pink-600:hover{--tw-bg-opacity:1;background-color:rgb(219 39 119 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-deep:hover{--tw-bg-opacity:1;background-color:rgb(158 107 107 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-soft:hover{--tw-bg-opacity:1;background-color:rgb(244 232 232 / var(--tw-bg-opacity, 1))}.hover\:bg-\[\#1557b0\]:hover{--tw-bg-opacity:1;background-color:rgb(21 87 176 / var(--tw-bg-opacity, 1))}.hover\:bg-gradient-to-tr:hover{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.hover\:from-amber-500:hover{--tw-gradient-from:#f59e0b var(--tw-gradient-from-position);--tw-gradient-to:rgb(245 158 11 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:via-pink-500:hover{--tw-gradient-to:rgb(236 72 153 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #ec4899 var(--tw-gradient-via-position), var(--tw-gradient-to)}.hover\:to-purple-600:hover{--tw-gradient-to:#9333ea var(--tw-gradient-to-position)}.hover\:text-charcoal:hover{--tw-text-opacity:1;color:rgb(44 42 41 / var(--tw-text-opacity, 1))}.hover\:text-rose-deep:hover{--tw-text-opacity:1;color:rgb(158 107 107 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:opacity-95:hover{opacity:0.95}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-rose-dusty:focus{--tw-border-opacity:1;border-color:rgb(200 155 155 / var(--tw-border-opacity, 1))}.focus\:border-rose-deep:focus{--tw-border-opacity:1;border-color:rgb(158 107 107 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-rose-soft:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(244 232 232 / var(--tw-ring-opacity, 1))}.disabled\:pointer-events-none:disabled{pointer-events:none}.disabled\:opacity-40:disabled{opacity:0.4}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:bg-rose-deep{--tw-bg-opacity:1;background-color:rgb(158 107 107 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:text-rose-deep{--tw-text-opacity:1;color:rgb(158 107 107 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:-left-6{left:-1.5rem}.sm\:left-auto{left:auto}.sm\:right-4{right:1rem}.sm\:flex{display:flex}.sm\:h-20{height:5rem}.sm\:h-96{height:24rem}.sm\:w-96{width:24rem}.sm\:w-auto{width:auto}.sm\:max-w-sm{max-width:24rem}.sm\:flex-initial{flex:0 1 auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:gap-3{gap:0.75rem}.sm\:gap-6{gap:1.5rem}.sm\:space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.sm\:p-4{padding:1rem}.sm\:p-6{padding:1.5rem}.sm\:p-7{padding:1.75rem}.sm\:p-5{padding:1.25rem}.sm\:px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.sm\:px-4{padding-left:1rem;padding-right:1rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-14{padding-top:3.5rem;padding-bottom:3.5rem}.sm\:py-16{padding-top:4rem;padding-bottom:4rem}.sm\:py-2{padding-top:0.5rem;padding-bottom:0.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xs{font-size:0.75rem;line-height:1rem}}@media (min-width: 768px){.md\:inline{display:inline}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:mx-0{margin-left:0px;margin-right:0px}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:justify-start{justify-content:flex-start}.lg\:gap-12{gap:3rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-20{padding-top:5rem;padding-bottom:5rem}.lg\:text-left{text-align:left}.lg\:text-6xl{font-size:3.75rem;line-height:1}.lg\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width: 1280px){.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style></head>
+<body class="font-sans antialiased selection:bg-rose-dusty selection:text-white">
+
+    <!-- Bildirishnoma (Toast Message Box - alert() o'rniga) -->
+    <div id="toast-container" class="fixed top-20 right-4 z-[100] flex flex-col gap-2 pointer-events-none max-w-xs w-full"></div>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-cream-50/90 backdrop-blur-md border-b border-cream-200 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20 gap-3">
+                
+                <!-- Brand Logo + Qushcha -->
+                <a href="#" class="flex items-center gap-2.5 group shrink-0">
+                    <div class="w-10 h-10 rounded-full bg-cream-200/80 border border-cream-300 flex items-center justify-center relative overflow-visible">
+                        <!-- Mini SVG Qushcha -->
+                        <svg class="w-6 h-6 text-rose-deep bird-container" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26 14C26 9.58172 22.4183 6 18 6C14.5 6 11.5 8.2 10.4 11.3C7.5 12.1 5 14.8 5 18.5C5 23.2 8.8 27 13.5 27H23C27.4 27 31 23.4 31 19C31 16.5 28.8 14.5 26 14Z" fill="#C89B9B"></path>
+                            <path class="bird-wing" d="M13 17C16 15 21 16 23 19.5C19.5 21.5 15 20.5 13 17Z" fill="#9E6B6B"></path>
+                            <circle cx="22.5" cy="11.5" r="1.3" fill="#2C2A29"></circle>
+                            <path d="M26 11.5L30.5 12.8L26 14.2V11.5Z" fill="#E5A93C"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-charcoal block leading-none">IBO HAYO</span>
+                        <span class="text-[10px] uppercase tracking-[0.22em] text-taupe block mt-0.5">Modest Fashion</span>
+                    </div>
+                </a>
+
+                <!-- Qidiruv maydoni (Desktop) -->
+                <div class="hidden md:flex flex-1 max-w-md mx-4">
+                    <div class="relative w-full">
+                        <input type="text" id="search-input-desktop" placeholder="Libos, ko'ylak yoki ro'mol izlash..." class="w-full pl-10 pr-4 py-2 rounded-full bg-white border border-cream-200 text-sm focus:outline-none focus:border-rose-dusty focus:ring-2 focus:ring-rose-soft transition">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-taupe text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- O'ng taraf tugmalari: Ijtimoiy tarmoqlar, Savat, Admin -->
+                <div class="flex items-center gap-1.5 sm:gap-3">
+                    <!-- Telegram & Instagram mini links -->
+                    <a href="https://t.me/ibohayo_uz" target="_blank" rel="noopener noreferrer" title="Telegram: @ibohayo_uz" class="hidden sm:flex w-9 h-9 rounded-full bg-cream-100 hover:bg-[#229ED9] hover:text-white text-charcoal items-center justify-center transition">
+                        <i class="fa-brands fa-telegram text-base"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ibo_hayo_?obrf=bmRjYXhrb3k2eTU=" target="_blank" rel="noopener noreferrer" title="Instagram: @ibo_hayo_" class="hidden sm:flex w-9 h-9 rounded-full bg-cream-100 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 hover:text-white text-charcoal items-center justify-center transition">
+                        <i class="fa-brands fa-instagram text-base"></i>
+                    </a>
+
+                    <!-- Savat tugmasi -->
+                    <button onclick="toggleCartDrawer(true)" class="relative p-2.5 rounded-full bg-cream-100 hover:bg-cream-200 text-charcoal transition" aria-label="Savat">
+                        <i class="fa-solid fa-bag-shopping text-base sm:text-lg"></i>
+                        <span id="cart-badge" class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-rose-deep text-white text-[11px] font-semibold flex items-center justify-center shadow-sm">0</span>
+                    </button>
+
+                    <!-- Ilovani yuklab olish (PWA Install) tugmasi -->
+                    <button onclick="triggerAppInstall()" title="Ilovani telefonga yuklab olish" class="flex items-center gap-1.5 px-3 py-2 sm:px-3.5 sm:py-2 rounded-full bg-rose-soft hover:bg-rose-deep text-rose-deep hover:text-white border border-rose-dusty/40 text-xs sm:text-sm font-medium transition shadow-xs">
+                        <i class="fa-solid fa-download text-xs"></i>
+                        <span class="hidden md:inline">Ilovani yuklash</span>
+                    </button>
+
+                    <!-- Admin Panel Trigger -->
+                    <button onclick="openAdminAccess()" class="flex items-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2 rounded-full bg-charcoal hover:bg-rose-deep text-white text-xs sm:text-sm font-medium transition shadow-sm">
+                        <i class="fa-solid fa-shield-halved text-xs"></i>
+                        <span class="hidden xs:inline">Admin</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobil qidiruv maydoni -->
+            <div class="pb-3 md:hidden">
+                <div class="relative w-full">
+                    <input type="text" id="search-input-mobile" placeholder="Libos, ko'ylak yoki ro'mol izlash..." class="w-full pl-9 pr-4 py-2 rounded-full bg-white border border-cream-200 text-sm focus:outline-none focus:border-rose-dusty">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-taupe text-xs"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-cream-100 via-cream-50 to-cream-50 border-b border-cream-200/70">
+        <!-- Dekorativ yumshoq doiralar -->
+        <div class="absolute -top-24 -right-24 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-rose-soft/60 blur-3xl pointer-events-none"></div>
+        <div class="absolute top-32 -left-20 w-64 h-64 rounded-full bg-cream-200/60 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                
+                <!-- Matn qismi -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-5 sm:space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-cream-200 shadow-xs text-xs font-medium text-rose-deep">
+                        <span class="w-2 h-2 rounded-full bg-rose-deep animate-pulse"></span>
+                        Yangi 2026 Kuz-Qish &amp; Bahor Kolleksiyasi
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-charcoal leading-[1.12]">
+                        Ibo va nafislik uyg‘unlashgan <span class="italic text-rose-deep font-normal">zamonaviy liboslar</span>
+                    </h1>
+
+                    <p class="text-taupe text-sm sm:text-base lg:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        <strong>IBO HAYO</strong> — har bir ayolning go'zalligi va qulayligini qadrlovchi nafis liboslar olami. Tabiiy matolar, zamonaviy bichim va hamyonbop narxlar sizni kutmoqda.
+                    </p>
+
+                    <!-- CTA Tugmalar va Ijtimoiy tarmoqlar -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-2">
+                        <a href="#catalog-section" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-charcoal hover:bg-rose-deep text-white font-medium text-sm transition shadow-md flex items-center justify-center gap-2">
+                            <span>Kolleksiyani ko‘rish</span>
+                            <i class="fa-solid fa-arrow-down text-xs"></i>
+                        </a>
+
+                        <button onclick="triggerAppInstall()" class="w-full sm:w-auto px-6 py-3.5 rounded-full bg-gradient-to-r from-[#d4a373] to-[#b5835a] hover:opacity-95 text-white font-medium text-sm transition shadow-md flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-google-play text-sm"></i>
+                            <span>Ilovani yuklab olish</span>
+                        </button>
+
+                        <div class="flex items-center gap-2.5 w-full sm:w-auto justify-center">
+                            <a href="https://t.me/ibohayo_uz" target="_blank" rel="noopener noreferrer" class="flex-1 sm:flex-initial px-5 py-3.5 rounded-full bg-white hover:bg-[#229ED9] hover:text-white hover:border-[#229ED9] border border-cream-300 text-charcoal font-medium text-sm transition flex items-center justify-center gap-2 shadow-xs">
+                                <i class="fa-brands fa-telegram text-[#229ED9] group-hover:text-white text-base"></i>
+                                <span>@ibohayo_uz</span>
+                            </a>
+                            <a href="https://www.instagram.com/ibo_hayo_?obrf=bmRjYXhrb3k2eTU=" target="_blank" rel="noopener noreferrer" class="flex-1 sm:flex-initial px-5 py-3.5 rounded-full bg-white hover:bg-rose-soft border border-cream-300 text-charcoal font-medium text-sm transition flex items-center justify-center gap-2 shadow-xs">
+                                <i class="fa-brands fa-instagram text-pink-600 text-base"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Afzalliklar -->
+                    <div class="grid grid-cols-3 gap-3 pt-4 border-t border-cream-200/80 max-w-lg mx-auto lg:mx-0 text-left">
+                        <div>
+                            <p class="font-serif text-xl sm:text-2xl font-bold text-charcoal">100%</p>
+                            <p class="text-[11px] sm:text-xs text-taupe">Sifatli va mayin matolar</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-xl sm:text-2xl font-bold text-charcoal">Tezkor</p>
+                            <p class="text-[11px] sm:text-xs text-taupe">O'zbekiston bo'ylab yetkazish</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-xl sm:text-2xl font-bold text-charcoal">24/7</p>
+                            <p class="text-[11px] sm:text-xs text-taupe">Telegram orqali maslahat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Vizual Karta -->
+                <div class="lg:col-span-5">
+                    <div class="relative max-w-sm mx-auto">
+                        <div class="aspect-[4/5] rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-cream-200 relative">
+                            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&amp;fit=crop&amp;w=800&amp;q=80" onerror="this.src='https://placehold.co/600x750/EFE6D5/2C2A29?text=IBO+HAYO+Collection'" alt="IBO HAYO Nafis Libos" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-5 left-5 right-5 text-white">
+                                <span class="px-2.5 py-1 rounded-full bg-white/20 backdrop-blur-md text-[11px] uppercase tracking-wider">Top Tanlov</span>
+                                <h3 class="font-serif text-2xl font-semibold mt-1">Nafis "Marvarid" Ko'ylagi</h3>
+                                <p class="text-xs text-cream-100 mt-0.5">Barcha o'lchamlar mavjud • 340 000 so'm</p>
+                            </div>
+                        </div>
+                        <!-- Suzuvchi Telegram karta -->
+                        <a href="https://t.me/ibohayo_uz" target="_blank" rel="noopener noreferrer" class="absolute -bottom-4 -left-3 sm:-left-6 bg-white p-3.5 rounded-2xl shadow-lg border border-cream-200 flex items-center gap-3 hover:scale-105 transition">
+                            <div class="w-10 h-10 rounded-full bg-[#229ED9]/10 text-[#229ED9] flex items-center justify-center text-xl">
+                                <i class="fa-brands fa-telegram"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-charcoal">Telegram kanalimiz</p>
+                                <p class="text-[11px] text-taupe">@ibohayo_uz ga qo'shiling</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOG SECTION -->
+    <main id="catalog-section" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+        
+        <!-- Bo'lim sarlavhasi va Kategoriya filtrlari -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+            <div>
+                <span class="text-xs uppercase tracking-widest text-rose-deep font-semibold">Katalog</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal mt-1">Liboslar To'plami</h2>
+            </div>
+
+            <!-- Kategoriya tugmalari (Gorizontal skroll mobil uchun) -->
+            <div id="category-filters" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+                <button data-category="all" class="cat-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap bg-charcoal text-white transition">
+                    Barchasi
+                </button>
+                <button data-category="Ko'ylaklar" class="cat-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap bg-white border border-cream-200 text-charcoal hover:bg-cream-100 transition">
+                    Ko'ylaklar
+                </button>
+                <button data-category="Hijob va Ro'mollar" class="cat-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap bg-white border border-cream-200 text-charcoal hover:bg-cream-100 transition">
+                    Hijob va Ro'mollar
+                </button>
+                <button data-category="Kostyumlar" class="cat-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap bg-white border border-cream-200 text-charcoal hover:bg-cream-100 transition">
+                    Kostyumlar
+                </button>
+                <button data-category="Yangi kolleksiya" class="cat-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap bg-white border border-cream-200 text-charcoal hover:bg-cream-100 transition">
+                    ✨ Yangi kolleksiya
+                </button>
+            </div>
+        </div>
+
+        <!-- Mahsulotlar Gridi -->
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
+                <article class="group bg-white rounded-3xl border border-cream-200/80 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-[4/5] bg-cream-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&amp;fit=crop&amp;w=700&amp;q=80" onerror="this.src='https://placehold.co/600x750/EFE6D5/2C2A29?text=IBO+HAYO'" alt="Nafis " marvarid"="" oq="" ko‘ylagi"="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-xs text-[11px] font-medium text-charcoal shadow-xs">
+                            Ko'ylaklar
+                        </span>
+                    </div>
+
+                    <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-[11px] text-taupe mb-1">
+                                <span>O'lcham: <strong class="text-charcoal">S, M, L, XL</strong></span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-charcoal leading-snug group-hover:text-rose-deep transition">
+                                Nafis "Marvarid" Oq Ko‘ylagi
+                            </h3>
+                            <p class="text-xs text-taupe mt-1.5 line-clamp-2 leading-relaxed">
+                                Yengil va nafas oluvchi tabiiy shifon matodan tikilgan, kundalik va bayramona tadbirlar uchun mos nafis ko‘ylak.
+                            </p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-cream-100">
+                            <p class="font-serif text-xl font-bold text-charcoal mb-3">340,000 so'm</p>
+                            <div class="flex items-center gap-2">
+                                <button onclick="openDirectOrder('p1')" class="flex-1 py-2.5 px-3 rounded-full bg-charcoal hover:bg-rose-deep text-white text-xs font-medium transition text-center">
+                                    Buyurtma berish
+                                </button>
+                                <button onclick="addToCart('p1')" title="Savatga qo'shish" class="w-10 h-10 rounded-full bg-cream-100 hover:bg-rose-soft text-charcoal hover:text-rose-deep flex items-center justify-center transition shrink-0">
+                                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+                <article class="group bg-white rounded-3xl border border-cream-200/80 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-[4/5] bg-cream-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&amp;fit=crop&amp;w=700&amp;q=80" onerror="this.src='https://placehold.co/600x750/EFE6D5/2C2A29?text=IBO+HAYO'" alt="" laylo"="" klassik="" kostyum="" to‘plami"="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-xs text-[11px] font-medium text-charcoal shadow-xs">
+                            Kostyumlar
+                        </span>
+                    </div>
+
+                    <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-[11px] text-taupe mb-1">
+                                <span>O'lcham: <strong class="text-charcoal">S, M, L</strong></span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-charcoal leading-snug group-hover:text-rose-deep transition">
+                                "Laylo" Klassik Kostyum To‘plami
+                            </h3>
+                            <p class="text-xs text-taupe mt-1.5 line-clamp-2 leading-relaxed">
+                                Keng bichimli shim va uzun jaketdan iborat zamonaviy, qulay va bejirim ayollar kostyumi.
+                            </p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-cream-100">
+                            <p class="font-serif text-xl font-bold text-charcoal mb-3">420,000 so'm</p>
+                            <div class="flex items-center gap-2">
+                                <button onclick="openDirectOrder('p2')" class="flex-1 py-2.5 px-3 rounded-full bg-charcoal hover:bg-rose-deep text-white text-xs font-medium transition text-center">
+                                    Buyurtma berish
+                                </button>
+                                <button onclick="addToCart('p2')" title="Savatga qo'shish" class="w-10 h-10 rounded-full bg-cream-100 hover:bg-rose-soft text-charcoal hover:text-rose-deep flex items-center justify-center transition shrink-0">
+                                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+                <article class="group bg-white rounded-3xl border border-cream-200/80 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-[4/5] bg-cream-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&amp;fit=crop&amp;w=700&amp;q=80" onerror="this.src='https://placehold.co/600x750/EFE6D5/2C2A29?text=IBO+HAYO'" alt="Ipakli " nilufar"="" sharf-ro‘mol"="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-xs text-[11px] font-medium text-charcoal shadow-xs">
+                            Hijob va Ro'mollar
+                        </span>
+                    </div>
+
+                    <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-[11px] text-taupe mb-1">
+                                <span>O'lcham: <strong class="text-charcoal">Standart (180x75 sm)</strong></span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-charcoal leading-snug group-hover:text-rose-deep transition">
+                                Ipakli "Nilufar" Sharf-Ro‘mol
+                            </h3>
+                            <p class="text-xs text-taupe mt-1.5 line-clamp-2 leading-relaxed">
+                                Sirpanmaydigan, yumshoq ipak aralashmali pastel rangdagi nafis ro‘mol.
+                            </p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-cream-100">
+                            <p class="font-serif text-xl font-bold text-charcoal mb-3">115,000 so'm</p>
+                            <div class="flex items-center gap-2">
+                                <button onclick="openDirectOrder('p3')" class="flex-1 py-2.5 px-3 rounded-full bg-charcoal hover:bg-rose-deep text-white text-xs font-medium transition text-center">
+                                    Buyurtma berish
+                                </button>
+                                <button onclick="addToCart('p3')" title="Savatga qo'shish" class="w-10 h-10 rounded-full bg-cream-100 hover:bg-rose-soft text-charcoal hover:text-rose-deep flex items-center justify-center transition shrink-0">
+                                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+                <article class="group bg-white rounded-3xl border border-cream-200/80 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-[4/5] bg-cream-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&amp;fit=crop&amp;w=700&amp;q=80" onerror="this.src='https://placehold.co/600x750/EFE6D5/2C2A29?text=IBO+HAYO'" alt="" madina"="" bahoriy="" keng="" ko‘ylak"="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-xs text-[11px] font-medium text-charcoal shadow-xs">
+                            Yangi kolleksiya
+                        </span>
+                    </div>
+
+                    <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-[11px] text-taupe mb-1">
+                                <span>O'lcham: <strong class="text-charcoal">S, M, L, XL</strong></span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-charcoal leading-snug group-hover:text-rose-deep transition">
+                                "Madina" Bahoriy Keng Ko‘ylak
+                            </h3>
+                            <p class="text-xs text-taupe mt-1.5 line-clamp-2 leading-relaxed">
+                                Yangi kolleksiyadan o‘rin olgan, bel qismi bog‘ichli va mayin gul naqshli uzun ko‘ylak.
+                            </p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-cream-100">
+                            <p class="font-serif text-xl font-bold text-charcoal mb-3">295,000 so'm</p>
+                            <div class="flex items-center gap-2">
+                                <button onclick="openDirectOrder('p4')" class="flex-1 py-2.5 px-3 rounded-full bg-charcoal hover:bg-rose-deep text-white text-xs font-medium transition text-center">
+                                    Buyurtma berish
+                                </button>
+                                <button onclick="addToCart('p4')" title="Savatga qo'shish" class="w-10 h-10 rounded-full bg-cream-100 hover:bg-rose-soft text-charcoal hover:text-rose-deep flex items-center justify-center transition shrink-0">
+                                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+                <article class="group bg-white rounded-3xl border border-cream-200/80 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-[4/5] bg-cream-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&amp;fit=crop&amp;w=700&amp;q=80" onerror="this.src='https://placehold.co/600x750/EFE6D5/2C2A29?text=IBO+HAYO'" alt="" sabo"="" bej="" rangli="" abaya"="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-xs text-[11px] font-medium text-charcoal shadow-xs">
+                            Ko'ylaklar
+                        </span>
+                    </div>
+
+                    <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-[11px] text-taupe mb-1">
+                                <span>O'lcham: <strong class="text-charcoal">M, L, XL</strong></span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-charcoal leading-snug group-hover:text-rose-deep transition">
+                                "Sabo" Bej Rangli Abaya
+                            </h3>
+                            <p class="text-xs text-taupe mt-1.5 line-clamp-2 leading-relaxed">
+                                Minimalistik uslubdagi qaymoqrang abaya. Har qanday ob-havoda o‘zingizni erkin his qilasiz.
+                            </p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-cream-100">
+                            <p class="font-serif text-xl font-bold text-charcoal mb-3">380,000 so'm</p>
+                            <div class="flex items-center gap-2">
+                                <button onclick="openDirectOrder('p5')" class="flex-1 py-2.5 px-3 rounded-full bg-charcoal hover:bg-rose-deep text-white text-xs font-medium transition text-center">
+                                    Buyurtma berish
+                                </button>
+                                <button onclick="addToCart('p5')" title="Savatga qo'shish" class="w-10 h-10 rounded-full bg-cream-100 hover:bg-rose-soft text-charcoal hover:text-rose-deep flex items-center justify-center transition shrink-0">
+                                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+                <article class="group bg-white rounded-3xl border border-cream-200/80 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-[4/5] bg-cream-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=700&amp;q=80" onerror="this.src='https://placehold.co/600x750/EFE6D5/2C2A29?text=IBO+HAYO'" alt="" gulsanam"="" trikotaj="" ikki="" qismli="" set"="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-xs text-[11px] font-medium text-charcoal shadow-xs">
+                            Yangi kolleksiya
+                        </span>
+                    </div>
+
+                    <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-[11px] text-taupe mb-1">
+                                <span>O'lcham: <strong class="text-charcoal">S, M, L</strong></span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-charcoal leading-snug group-hover:text-rose-deep transition">
+                                "Gulsanam" Trikotaj Ikki Qismli Set
+                            </h3>
+                            <p class="text-xs text-taupe mt-1.5 line-clamp-2 leading-relaxed">
+                                Yumshoq trikotaj matodan tikilgan uzun yubka va sviter to‘plami.
+                            </p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-cream-100">
+                            <p class="font-serif text-xl font-bold text-charcoal mb-3">360,000 so'm</p>
+                            <div class="flex items-center gap-2">
+                                <button onclick="openDirectOrder('p6')" class="flex-1 py-2.5 px-3 rounded-full bg-charcoal hover:bg-rose-deep text-white text-xs font-medium transition text-center">
+                                    Buyurtma berish
+                                </button>
+                                <button onclick="addToCart('p6')" title="Savatga qo'shish" class="w-10 h-10 rounded-full bg-cream-100 hover:bg-rose-soft text-charcoal hover:text-rose-deep flex items-center justify-center transition shrink-0">
+                                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        <!-- Mahsulot topilmaganda -->
+        <div id="empty-state" class="hidden text-center py-16 bg-white rounded-3xl border border-cream-200">
+            <div class="w-16 h-16 rounded-full bg-cream-100 text-taupe flex items-center justify-center mx-auto mb-3 text-2xl">
+                <i class="fa-solid fa-shirt"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-charcoal">Libos topilmadi</h3>
+            <p class="text-sm text-taupe mt-1">Boshqa kategoriya yoki qidiruv so'zini sinab ko'ring.</p>
+            <button onclick="resetFilters()" class="mt-4 px-5 py-2 rounded-full bg-charcoal text-white text-xs font-medium">Barchasini ko'rsatish</button>
+        </div>
+    </main>
+
+    <!-- QUSHCHA MASCOT & FON MUSIQASI (FLOATING WIDGET) -->
+    <div id="bird-music-widget" class="fixed bottom-4 right-4 z-40 flex flex-col items-end gap-2">
+        <!-- Qushcha salomlashuv bulutcha (Speech Bubble) -->
+        <div id="bird-bubble" class="bg-white/95 backdrop-blur-md border border-cream-200 shadow-lg rounded-2xl rounded-br-none px-3.5 py-2.5 max-w-[230px] text-xs text-charcoal transition-all duration-300">
+            <div class="flex items-start justify-between gap-2">
+                <p id="bird-message" class="leading-snug">Assalomu alaykum! 🕊️ <b>IBO HAYO</b> do'koniga xush kelibsiz! Mayin musiqa yoqaymi?</p>
+                <button onclick="hideBirdBubble()" class="text-taupe hover:text-charcoal text-[10px] p-0.5" aria-label="Yopish">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Qushcha + Musiqa Pleyer Tugmasi -->
+        <div class="flex items-center gap-2 bg-white/95 backdrop-blur-md border border-cream-300 shadow-xl rounded-full p-1.5 pl-3 pr-2">
+            <!-- Musiqa holati va tugmasi -->
+            <button id="music-toggle-btn" onclick="toggleAmbientMusic()" class="flex items-center gap-2 text-left group">
+                <div id="music-icon-box" class="w-8 h-8 rounded-full bg-rose-soft text-rose-deep flex items-center justify-center transition group-hover:bg-rose-deep group-hover:text-white">
+                    <i id="music-play-icon" class="fa-solid fa-play text-xs ml-0.5"></i>
+                </div>
+                <div class="pr-1">
+                    <p class="text-[11px] font-bold text-charcoal leading-tight">Nafis Kuy</p>
+                    <p id="music-status-text" class="text-[10px] text-taupe leading-tight">Tinglash uchun bosing</p>
+                </div>
+            </button>
+
+            <!-- Interaktiv Qushcha Avatar -->
+            <button onclick="petTheBird()" title="Qushchani silash / Sayratish" class="relative w-11 h-11 rounded-full bg-cream-100 hover:bg-cream-200 border border-cream-300 flex items-center justify-center transition">
+                <!-- Musiqa notalari (faqat kuy chalinganda ko'rinadi) -->
+                <span id="note-1" class="hidden music-note absolute -top-2 left-1 text-rose-deep text-xs">♪</span>
+                <span id="note-2" class="hidden music-note absolute -top-3 right-1 text-amber-500 text-xs" style="animation-delay: 0.8s;">♫</span>
+                
+                <svg id="mascot-bird-svg" class="w-8 h-8 bird-container" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Qushcha tanasi -->
+                    <path d="M28 15C28 10.0294 23.9706 6 19 6C15.1 6 11.8 8.5 10.6 12C7.3 12.9 4.5 15.9 4.5 20C4.5 25.2 8.7 29.5 14 29.5H24.5C29.5 29.5 33.5 25.5 33.5 20.5C33.5 17.7 31.1 15.5 28 15Z" fill="#E8C5C5"></path>
+                    <!-- Qorin qismi -->
+                    <path d="M14 29.5H24.5C28.5 29.5 31.8 26.8 33 23C29 24.5 22 24.5 16 21.5C12 19.5 9 21 7 24.5C8.5 27.5 11 29.5 14 29.5Z" fill="#FDFBF7"></path>
+                    <!-- Qanot -->
+                    <path class="bird-wing" d="M13.5 18.5C17 16 22.5 17.2 24.8 21.2C20.8 23.5 15.8 22.2 13.5 18.5Z" fill="#C89B9B"></path>
+                    <!-- Ko'z -->
+                    <circle cx="24" cy="12" r="1.6" fill="#2C2A29"></circle>
+                    <circle cx="24.5" cy="11.5" r="0.5" fill="white"></circle>
+                    <!-- Tumshuq -->
+                    <path d="M28 12L33.2 13.5L28 15V12Z" fill="#E5A93C"></path>
+                    <!-- Yonoqcha -->
+                    <circle cx="22.5" cy="14.5" r="1.5" fill="#F4978E" fill-opacity="0.6"></circle>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-cream-100 border-t border-cream-200 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Brend haqida -->
+                <div>
+                    <span class="font-serif text-3xl font-bold tracking-wider text-charcoal">IBO HAYO</span>
+                    <p class="text-sm text-taupe mt-3 leading-relaxed max-w-sm">
+                        Zamonaviy va iboli ayollar uchun nafis liboslar do'koni. Har bir tikilgan chokda mehr, sifat va did mujassam.
+                    </p>
+                    <div class="flex items-center gap-3 mt-5">
+                        <a href="https://t.me/ibohayo_uz" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-white border border-cream-300 hover:bg-[#229ED9] hover:text-white hover:border-[#229ED9] text-charcoal text-xs font-medium transition flex items-center gap-2">
+                            <i class="fa-brands fa-telegram text-sm"></i> @ibohayo_uz
+                        </a>
+                        <a href="https://www.instagram.com/ibo_hayo_?obrf=bmRjYXhrb3k2eTU=" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-white border border-cream-300 hover:bg-pink-600 hover:text-white hover:border-pink-600 text-charcoal text-xs font-medium transition flex items-center gap-2">
+                            <i class="fa-brands fa-instagram text-sm"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tezkor havolalar -->
+                <div>
+                    <h4 class="font-serif text-xl font-bold text-charcoal mb-3">Bo'limlar</h4>
+                    <ul class="space-y-2 text-sm text-taupe">
+                        <li><a href="#catalog-section" onclick="filterByCategory('all')" class="hover:text-rose-deep transition">Barcha liboslar</a></li>
+                        <li><a href="#catalog-section" onclick="filterByCategory('Ko\'ylaklar')" class="hover:text-rose-deep transition">Ko'ylaklar kolleksiyasi</a></li>
+                        <li><a href="#catalog-section" onclick="filterByCategory('Hijob va Ro\'mollar')" class="hover:text-rose-deep transition">Hijob va Ro'mollar</a></li>
+                        <li><a href="#catalog-section" onclick="filterByCategory('Kostyumlar')" class="hover:text-rose-deep transition">Klassik va kundalik kostyumlar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Aloqa va Ish vaqti -->
+                <div>
+                    <h4 class="font-serif text-xl font-bold text-charcoal mb-3">Aloqa &amp; Ish vaqti</h4>
+                    <ul class="space-y-2.5 text-sm text-taupe">
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-regular fa-clock text-rose-deep"></i>
+                            <span>Har kuni: 09:00 — 21:00</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-brands fa-telegram text-rose-deep"></i>
+                            <a href="https://t.me/ibohayo_uz" target="_blank" rel="noopener noreferrer" class="hover:underline text-charcoal font-medium">t.me/ibohayo_uz</a>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-brands fa-instagram text-rose-deep"></i>
+                            <a href="https://www.instagram.com/ibo_hayo_?obrf=bmRjYXhrb3k2eTU=" target="_blank" rel="noopener noreferrer" class="hover:underline text-charcoal font-medium">@ibo_hayo_</a>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-truck-fast text-rose-deep"></i>
+                            <span>Toshkent va barcha viloyatlarga yetkazib berish</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-cream-200 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-taupe gap-2">
+                <p>© 2026 IBO HAYO. Barcha huquqlar himoyalangan.</p>
+                <p>Nafislik va go'zallik bilan yaratildi 🌸</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBIL UCHUN AQLLI ILOVA YUKLASH BANNERI (Smart Bottom App Install Banner) -->
+    <div id="mobile-install-banner" class="fixed bottom-20 left-3 right-3 sm:left-auto sm:right-4 sm:max-w-sm z-40 bg-white/95 backdrop-blur-md border border-cream-300 shadow-2xl rounded-2xl p-3.5 flex items-center justify-between gap-3 transition-all duration-300">
+        <div class="flex items-center gap-3 min-w-0">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#d4a373] to-[#9E6B6B] text-white flex flex-col items-center justify-center shrink-0 shadow-sm">
+                <span class="font-serif text-sm font-bold leading-none">IH</span>
+                <span class="text-[8px] tracking-widest uppercase mt-0.5">APP</span>
+            </div>
+            <div class="min-w-0">
+                <div class="flex items-center gap-1.5">
+                    <h4 class="font-bold text-xs text-charcoal truncate">IBO HAYO Ilovasi</h4>
+                    <span class="px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 text-[9px] font-semibold">Tezkor</span>
+                </div>
+                <p class="text-[11px] text-taupe truncate">Asosiy ekranga ilova sifatida o'rnating</p>
+            </div>
+        </div>
+        <div class="flex items-center gap-1.5 shrink-0">
+            <button onclick="triggerAppInstall()" class="px-3.5 py-2 rounded-full bg-charcoal hover:bg-rose-deep text-white text-xs font-medium transition shadow-xs">
+                O'rnatish
+            </button>
+            <button onclick="dismissInstallBanner()" class="w-7 h-7 rounded-full bg-cream-100 text-taupe hover:text-charcoal flex items-center justify-center text-xs" aria-label="Yopish">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- MODALS & DRAWERS (SAVAT, BUYURTMA, ADMIN PIN VA ADMIN DASHBOARD)      -->
+    <!-- ===================================================================== -->
+
+    <!-- 1. SAVAT DRAWER (O'ng tarafdan ochiluvchi panel) -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 hidden">
+        <div onclick="toggleCartDrawer(false)" class="absolute inset-0 bg-black/40 backdrop-blur-xs"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-full max-w-md bg-cream-50 shadow-2xl flex flex-col">
+            <div class="p-5 border-b border-cream-200 flex items-center justify-between bg-white">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-bag-shopping text-rose-deep"></i>
+                    <h3 class="font-serif text-2xl font-bold text-charcoal">Sizning savatingiz</h3>
+                </div>
+                <button onclick="toggleCartDrawer(false)" class="w-8 h-8 rounded-full bg-cream-100 hover:bg-cream-200 flex items-center justify-center text-charcoal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div id="cart-items-container" class="flex-1 overflow-y-auto p-5 space-y-3">
+                    <div class="text-center py-16">
+                        <i class="fa-solid fa-bag-shopping text-4xl text-cream-300 mb-3"></i>
+                        <p class="font-serif text-xl text-charcoal">Savatingiz hozircha bo'sh</p>
+                        <p class="text-xs text-taupe mt-1">Yoqqan liboslaringizni savatga qo'shing</p>
+                    </div>
+                </div>
+
+            <div class="p-5 bg-white border-t border-cream-200 space-y-3">
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-taupe">Jami summa:</span>
+                    <span id="cart-total-price" class="font-serif text-2xl font-bold text-charcoal">0 so'm</span>
+                </div>
+                <button onclick="openCheckoutModalFromCart()" id="cart-checkout-btn" class="w-full py-3.5 rounded-full bg-charcoal hover:bg-rose-deep text-white font-medium text-sm transition disabled:opacity-40 disabled:pointer-events-none" disabled="">
+                    Buyurtmani rasmiylashtirish
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. TEZKOR BUYURTMA MODALI (Saytda saqlanadi + Telegramga yuborish imkoniyati) -->
+    <div id="order-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+        <div onclick="closeOrderModal()" class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
+        <div class="relative bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-cream-200 z-10 max-h-[90vh] overflow-y-auto">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="font-serif text-2xl font-bold text-charcoal">Buyurtma berish</h3>
+                <button onclick="closeOrderModal()" class="w-8 h-8 rounded-full bg-cream-100 flex items-center justify-center text-charcoal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div id="order-summary-box" class="p-3.5 rounded-2xl bg-cream-100 border border-cream-200 mb-4 text-xs space-y-1">
+                <!-- Tanlangan mahsulot(lar) -->
+            </div>
+
+            <form id="order-form" onsubmit="submitCustomerOrder(event)" class="space-y-3.5">
+                <div>
+                    <label class="block text-xs font-medium text-charcoal mb-1">Ismingiz *</label>
+                    <input type="text" id="cust-name" required="" placeholder="Masalan: Madina" class="w-full px-4 py-2.5 rounded-xl border border-cream-300 text-sm focus:outline-none focus:border-rose-deep">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-charcoal mb-1">Telefon raqamingiz *</label>
+                    <input type="tel" id="cust-phone" required="" placeholder="+998 90 123 45 67" class="w-full px-4 py-2.5 rounded-xl border border-cream-300 text-sm focus:outline-none focus:border-rose-deep">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-charcoal mb-1">O'lcham va Manzil</label>
+                    <input type="text" id="cust-note" placeholder="Masalan: M o'lcham, Toshkent sh." class="w-full px-4 py-2.5 rounded-xl border border-cream-300 text-sm focus:outline-none focus:border-rose-deep">
+                </div>
+
+                <div class="pt-2 flex flex-col gap-2">
+                    <button type="submit" class="w-full py-3 rounded-full bg-charcoal hover:bg-rose-deep text-white font-medium text-sm transition">
+                        Buyurtmani tasdiqlash
+                    </button>
+                    <a id="direct-tg-order-link" href="https://t.me/ibohayo_uz" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-full bg-[#229ED9]/10 hover:bg-[#229ED9] text-[#229ED9] hover:text-white font-medium text-sm transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-telegram text-base"></i>
+                        <span>Telegram (@ibohayo_uz) orqali yozish</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 3. ADMIN PANEL KOD (PIN: 1066) MODALI -->
+    <div id="admin-pin-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+        <div onclick="closeAdminPinModal()" class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
+        <div class="relative bg-white rounded-3xl max-w-sm w-full p-6 sm:p-7 shadow-2xl border border-cream-200 z-10 text-center">
+            <div class="w-14 h-14 rounded-full bg-cream-100 text-charcoal flex items-center justify-center mx-auto mb-3 text-xl border border-cream-200">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-charcoal">Admin Panelga kirish</h3>
+            <p class="text-xs text-taupe mt-1">Boshqaruv panelini ochish uchun 4 xonali maxfiy kodni kiriting</p>
+
+            <form onsubmit="verifyAdminPin(event)" class="mt-5 space-y-4">
+                <input type="password" id="admin-pin-input" maxlength="4" inputmode="numeric" pattern="[0-9]*" placeholder="••••" required="" class="w-44 mx-auto block text-center text-2xl tracking-[0.5em] font-bold py-3 px-4 rounded-2xl bg-cream-50 border border-cream-300 focus:outline-none focus:border-rose-deep">
+                <p id="pin-error-msg" class="hidden text-xs text-red-600 font-medium">Kod noto'g'ri! Qaytadan urinib ko'ring.</p>
+                
+                <div class="flex items-center gap-2 pt-1">
+                    <button type="button" onclick="closeAdminPinModal()" class="flex-1 py-2.5 rounded-full bg-cream-100 text-charcoal text-xs font-medium">Bekor qilish</button>
+                    <button type="submit" class="flex-1 py-2.5 rounded-full bg-charcoal hover:bg-rose-deep text-white text-xs font-medium transition">Kirish</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 4. ADMIN DASHBOARD MODAL (To'liq boshqaruv paneli) -->
+    <div id="admin-dashboard-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-2 sm:p-4">
+        <div onclick="closeAdminDashboard()" class="absolute inset-0 bg-black/60 backdrop-blur-xs"></div>
+        <div class="relative bg-cream-50 rounded-3xl max-w-5xl w-full h-[92vh] flex flex-col shadow-2xl border border-cream-200 z-10 overflow-hidden">
+            
+            <!-- Admin Header -->
+            <div class="px-5 py-4 bg-white border-b border-cream-200 flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                    <span class="w-9 h-9 rounded-full bg-charcoal text-white flex items-center justify-center text-sm">
+                        <i class="fa-solid fa-crown"></i>
+                    </span>
+                    <div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-charcoal leading-none">IBO HAYO — Admin Panel</h3>
+                        <p class="text-[11px] text-taupe mt-0.5">Mahsulotlar va buyurtmalarni boshqarish</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button onclick="logoutAdmin()" class="px-3 py-1.5 rounded-full bg-rose-soft text-rose-deep text-xs font-medium hover:bg-rose-deep hover:text-white transition">
+                        Chiqish
+                    </button>
+                    <button onclick="closeAdminDashboard()" class="w-8 h-8 rounded-full bg-cream-100 flex items-center justify-center text-charcoal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Admin Tablar -->
+            <div class="px-5 pt-3 bg-white border-b border-cream-200 flex gap-4">
+                <button onclick="switchAdminTab('products')" id="tab-btn-products" class="admin-tab-btn pb-2.5 text-xs sm:text-sm font-semibold border-b-2 border-charcoal text-charcoal">
+                    Liboslar (<span id="admin-prod-count">0</span>)
+                </button>
+                <button onclick="switchAdminTab('orders')" id="tab-btn-orders" class="admin-tab-btn pb-2.5 text-xs sm:text-sm font-medium border-b-2 border-transparent text-taupe hover:text-charcoal">
+                    Buyurtmalar (<span id="admin-order-count">0</span>)
+                </button>
+            </div>
+
+            <!-- Admin Kontent -->
+            <div class="flex-1 overflow-y-auto p-4 sm:p-6">
+                
+                <!-- TAB 1: MAHSULOTLARNI BOSHQARISH -->
+                <div id="admin-tab-products" class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    
+                    <!-- Yangi mahsulot qo'shish / Tahrirlash formasi -->
+                    <div class="lg:col-span-5 bg-white p-5 rounded-2xl border border-cream-200 h-fit">
+                        <h4 id="admin-form-title" class="font-serif text-xl font-bold text-charcoal mb-3">Yangi libos qo'shish</h4>
+                        <form id="admin-product-form" onsubmit="saveAdminProduct(event)" class="space-y-3">
+                            <input type="hidden" id="edit-prod-id">
+                            
+                            <div>
+                                <label class="block text-xs font-medium text-charcoal mb-1">Libos nomi *</label>
+                                <input type="text" id="prod-name" required="" placeholder="Masalan: 'Rayhon' ipak ko'ylagi" class="w-full px-3.5 py-2 rounded-xl border border-cream-300 text-sm focus:outline-none focus:border-rose-deep">
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-2.5">
+                                <div>
+                                    <label class="block text-xs font-medium text-charcoal mb-1">Narxi (so'm) *</label>
+                                    <input type="number" id="prod-price" required="" placeholder="320000" class="w-full px-3.5 py-2 rounded-xl border border-cream-300 text-sm focus:outline-none focus:border-rose-deep">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-charcoal mb-1">Kategoriya *</label>
+                                    <select id="prod-category" class="w-full px-3 py-2 rounded-xl border border-cream-300 text-sm bg-white focus:outline-none focus:border-rose-deep">
+                                        <option value="Ko'ylaklar">Ko'ylaklar</option>
+                                        <option value="Hijob va Ro'mollar">Hijob va Ro'mollar</option>
+                                        <option value="Kostyumlar">Kostyumlar</option>
+                                        <option value="Yangi kolleksiya">Yangi kolleksiya</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-charcoal mb-1">O'lchamlar</label>
+                                <input type="text" id="prod-sizes" value="S, M, L, XL" placeholder="S, M, L, XL" class="w-full px-3.5 py-2 rounded-xl border border-cream-300 text-sm focus:outline-none focus:border-rose-deep">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-charcoal mb-1">Rasm havolasi (URL) yoki fayl yuklash</label>
+                                <input type="url" id="prod-image-url" placeholder="https://..." class="w-full px-3.5 py-2 rounded-xl border border-cream-300 text-sm focus:outline-none focus:border-rose-deep mb-2">
+                                <label class="flex items-center justify-center gap-2 px-3 py-2 rounded-xl border border-dashed border-cream-300 bg-cream-50 hover:bg-cream-100 cursor-pointer text-xs text-taupe transition">
+                                    <i class="fa-solid fa-cloud-arrow-up text-rose-deep"></i>
+                                    <span>Telefondan / Kompyuterdan rasm tanlash</span>
+                                    <input type="file" id="prod-image-file" accept="image/*" onchange="handleImageFileUpload(event)" class="hidden">
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-charcoal mb-1">Qisqacha ta'rif</label>
+                                <textarea id="prod-desc" rows="2" placeholder="Matosi, rangi va qulayliklari haqida..." class="w-full px-3.5 py-2 rounded-xl border border-cream-300 text-sm focus:outline-none focus:border-rose-deep"></textarea>
+                            </div>
+
+                            <div class="flex gap-2 pt-1">
+                                <button type="submit" class="flex-1 py-2.5 rounded-full bg-charcoal hover:bg-rose-deep text-white text-xs font-medium transition">
+                                    Saqlash
+                                </button>
+                                <button type="button" id="cancel-edit-btn" onclick="resetAdminForm()" class="hidden px-4 py-2.5 rounded-full bg-cream-200 text-charcoal text-xs font-medium">
+                                    Bekor qilish
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Mavjud mahsulotlar ro'yxati -->
+                    <div class="lg:col-span-7 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-serif text-xl font-bold text-charcoal">Saytdagi liboslar ro'yxati</h4>
+                            <button onclick="resetDefaultCatalog()" class="text-[11px] text-taupe hover:text-rose-deep underline">Standart holatga qaytarish</button>
+                        </div>
+                        <div id="admin-products-list" class="space-y-2.5">
+                            <!-- JS orqali -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: BUYURTMALAR -->
+                <div id="admin-tab-orders" class="hidden space-y-3">
+                    <h4 class="font-serif text-xl font-bold text-charcoal">Kelib tushgan buyurtmalar</h4>
+                    <div id="admin-orders-list" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <!-- JS orqali -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. ILOVANI YUKLAB OLISH / GOOGLE CHROME O'RNATISH MODALI -->
+    <div id="pwa-install-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div onclick="closePwaModal()" class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
+        <div class="relative bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-cream-200 z-10 max-h-[90vh] overflow-y-auto">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#d4a373] to-[#9E6B6B] text-white flex flex-col items-center justify-center shadow-md">
+                        <span class="font-serif text-lg font-bold leading-none">IH</span>
+                        <span class="text-[8px] tracking-widest uppercase mt-0.5">IBO HAYO</span>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-xl font-bold text-charcoal leading-tight">IBO HAYO Ilovasi</h3>
+                        <p class="text-xs text-taupe flex items-center gap-1.5 mt-0.5">
+                            <i class="fa-brands fa-chrome text-[#4285F4]"></i> Google Chrome / Web App
+                        </p>
+                    </div>
+                </div>
+                <button onclick="closePwaModal()" class="w-8 h-8 rounded-full bg-cream-100 hover:bg-cream-200 flex items-center justify-center text-charcoal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Google Chrome / Android tezkor o'rnatish tugmasi (agar native prompt tayyor bo'lsa) -->
+            <div id="native-prompt-box" class="hidden mb-4 p-4 rounded-2xl bg-cream-100 border border-cream-300 text-center space-y-2.5">
+                <p class="text-xs text-charcoal font-medium">Ilova telefoningiz yoki kompyuteringizga o'rnatishga tayyor!</p>
+                <button onclick="executeNativeInstall()" class="w-full py-3 rounded-full bg-[#1a73e8] hover:bg-[#1557b0] text-white text-xs sm:text-sm font-semibold transition shadow-md flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Hozir o'rnatish (Google Chrome)</span>
+                </button>
+            </div>
+
+            <!-- Qo'llanma (Android & iOS) -->
+            <div class="space-y-3 text-xs">
+                <!-- Android / Google Chrome -->
+                <div class="p-3.5 rounded-2xl bg-cream-50 border border-cream-200 space-y-2">
+                    <div class="flex items-center gap-2 font-bold text-charcoal">
+                        <i class="fa-brands fa-android text-emerald-600 text-base"></i>
+                        <span>Android (Google Chrome) orqali o'rnatish:</span>
+                    </div>
+                    <ol class="list-decimal list-inside space-y-1 text-taupe leading-relaxed">
+                        <li>Brauzerning yuqori o'ng burchagidagi <strong class="text-charcoal">⋮ (uch nuqta)</strong> menyusini bosing.</li>
+                        <li><strong class="text-charcoal">"Ilovani o'rnatish"</strong> yoki <strong class="text-charcoal">"Asosiy ekranga qo'shish"</strong> tugmasini tanlang.</li>
+                        <li>Chiqgan oynada <strong class="text-charcoal">"O'rnatish"</strong> ni bosing — ilova telefoningiz menyusida paydo bo'ladi!</li>
+                    </ol>
+                </div>
+
+                <!-- iPhone / Safari -->
+                <div class="p-3.5 rounded-2xl bg-cream-50 border border-cream-200 space-y-2">
+                    <div class="flex items-center gap-2 font-bold text-charcoal">
+                        <i class="fa-brands fa-apple text-charcoal text-base"></i>
+                        <span>iPhone / iPad (Safari) orqali o'rnatish:</span>
+                    </div>
+                    <ol class="list-decimal list-inside space-y-1 text-taupe leading-relaxed">
+                        <li>Ekran pastidagi <strong class="text-charcoal"><i class="fa-solid fa-arrow-up-from-bracket text-blue-600"></i> Ulashish (Share)</strong> belgisini bosing.</li>
+                        <li>Pastga tushib <strong class="text-charcoal">"На экран «Домой»"</strong> (Add to Home Screen) ni tanlang.</li>
+                        <li>Yuqori o'ng burchakdagi <strong class="text-charcoal">"Qo'shish"</strong> tugmasini bosing.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Qo'shimcha: Offline HTML fayl sifatida yuklab olish -->
+            <div class="mt-4 pt-3.5 border-t border-cream-200 flex flex-col gap-2">
+                <button onclick="downloadStandaloneHtml()" class="w-full py-2.5 px-4 rounded-full bg-cream-100 hover:bg-cream-200 text-charcoal text-xs font-semibold transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-arrow-down text-rose-deep"></i>
+                    <span>Sayt faylini yuklab olish (index.html)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- JAVASCRIPT LOGIC                                                      -->
+    <!-- ===================================================================== -->
+    <script>
+        // 1. STANDART MAHSULOTLAR KATALOGI
+        const DEFAULT_PRODUCTS = [
+            {
+                id: 'p1',
+                name: 'Nafis "Marvarid" Oq Ko‘ylagi',
+                price: 340000,
+                category: "Ko'ylaklar",
+                sizes: 'S, M, L, XL',
+                image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=80',
+                description: 'Yengil va nafas oluvchi tabiiy shifon matodan tikilgan, kundalik va bayramona tadbirlar uchun mos nafis ko‘ylak.'
+            },
+            {
+                id: 'p2',
+                name: '"Laylo" Klassik Kostyum To‘plami',
+                price: 420000,
+                category: 'Kostyumlar',
+                sizes: 'S, M, L',
+                image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80',
+                description: 'Keng bichimli shim va uzun jaketdan iborat zamonaviy, qulay va bejirim ayollar kostyumi.'
+            },
+            {
+                id: 'p3',
+                name: 'Ipakli "Nilufar" Sharf-Ro‘mol',
+                price: 115000,
+                category: "Hijob va Ro'mollar",
+                sizes: 'Standart (180x75 sm)',
+                image: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=700&q=80',
+                description: 'Sirpanmaydigan, yumshoq ipak aralashmali pastel rangdagi nafis ro‘mol.'
+            },
+            {
+                id: 'p4',
+                name: '"Madina" Bahoriy Keng Ko‘ylak',
+                price: 295000,
+                category: 'Yangi kolleksiya',
+                sizes: 'S, M, L, XL',
+                image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=700&q=80',
+                description: 'Yangi kolleksiyadan o‘rin olgan, bel qismi bog‘ichli va mayin gul naqshli uzun ko‘ylak.'
+            },
+            {
+                id: 'p5',
+                name: '"Sabo" Bej Rangli Abaya',
+                price: 380000,
+                category: "Ko'ylaklar",
+                sizes: 'M, L, XL',
+                image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=700&q=80',
+                description: 'Minimalistik uslubdagi qaymoqrang abaya. Har qanday ob-havoda o‘zingizni erkin his qilasiz.'
+            },
+            {
+                id: 'p6',
+                name: '"Gulsanam" Trikotaj Ikki Qismli Set',
+                price: 360000,
+                category: 'Yangi kolleksiya',
+                sizes: 'S, M, L',
+                image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80',
+                description: 'Yumshoq trikotaj matodan tikilgan uzun yubka va sviter to‘plami.'
+            }
+        ];
+
+        // 2. STATE (HOLAT) VA LOCALSTORAGE
+        let products = JSON.parse(localStorage.getItem('ibohayo_products')) || [...DEFAULT_PRODUCTS];
+        let cart = JSON.parse(localStorage.getItem('ibohayo_cart')) || [];
+        let orders = JSON.parse(localStorage.getItem('ibohayo_orders')) || [
+            {
+                id: 'ORD-101',
+                customer: 'Malika Karimova',
+                phone: '+998 90 777 12 34',
+                items: 'Nafis "Marvarid" Oq Ko‘ylagi (1 dona)',
+                total: 340000,
+                note: 'M o‘lcham, Chilonzor tumani',
+                date: 'Bugun, 14:20'
+            }
+        ];
+
+        let currentCategory = 'all';
+        let currentSearch = '';
+        let isAdminAuthenticated = false;
+        let currentOrderContext = null; // Tezkor buyurtma uchun
+
+        // 3. YORDAMCHI FUNKSIYALAR
+        function formatPrice(num) {
+            return Number(num).toLocaleString('uz-UZ') + " so'm";
+        }
+
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            const bgClass = type === 'error' ? 'bg-red-600 text-white' : 'bg-charcoal text-white';
+            toast.className = `${bgClass} px-4 py-3 rounded-2xl shadow-lg text-xs font-medium flex items-center gap-2.5 pointer-events-auto transform transition-all duration-300 translate-x-4 opacity-0`;
+            toast.innerHTML = `
+                <i class="fa-solid ${type === 'error' ? 'fa-circle-exclamation' : 'fa-circle-check text-rose-dusty'}"></i>
+                <span>${message}</span>
+            `;
+            container.appendChild(toast);
+
+            requestAnimationFrame(() => {
+                toast.classList.remove('translate-x-4', 'opacity-0');
+            });
+
+            setTimeout(() => {
+                toast.classList.add('translate-x-4', 'opacity-0');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        function saveState() {
+            localStorage.setItem('ibohayo_products', JSON.stringify(products));
+            localStorage.setItem('ibohayo_cart', JSON.stringify(cart));
+            localStorage.setItem('ibohayo_orders', JSON.stringify(orders));
+        }
+
+        // 4. KATALOGNI CHIZISH VA FILTRLASH
+        function renderProducts() {
+            const grid = document.getElementById('products-grid');
+            const emptyState = document.getElementById('empty-state');
+
+            const filtered = products.filter(p => {
+                const matchCat = currentCategory === 'all' || p.category === currentCategory;
+                const matchSearch = p.name.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                                    (p.description && p.description.toLowerCase().includes(currentSearch.toLowerCase()));
+                return matchCat && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+            grid.innerHTML = filtered.map(product => `
+                <article class="group bg-white rounded-3xl border border-cream-200/80 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-[4/5] bg-cream-100 overflow-hidden">
+                        <img src="${product.image}" 
+                             onerror="this.src='https://placehold.co/600x750/EFE6D5/2C2A29?text=IBO+HAYO'"
+                             alt="${product.name}" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-xs text-[11px] font-medium text-charcoal shadow-xs">
+                            ${product.category}
+                        </span>
+                    </div>
+
+                    <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-[11px] text-taupe mb-1">
+                                <span>O'lcham: <strong class="text-charcoal">${product.sizes || 'S, M, L'}</strong></span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-charcoal leading-snug group-hover:text-rose-deep transition">
+                                ${product.name}
+                            </h3>
+                            <p class="text-xs text-taupe mt-1.5 line-clamp-2 leading-relaxed">
+                                ${product.description || 'Nafis va sifatli ayollar libosi.'}
+                            </p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-cream-100">
+                            <p class="font-serif text-xl font-bold text-charcoal mb-3">${formatPrice(product.price)}</p>
+                            <div class="flex items-center gap-2">
+                                <button onclick="openDirectOrder('${product.id}')" 
+                                    class="flex-1 py-2.5 px-3 rounded-full bg-charcoal hover:bg-rose-deep text-white text-xs font-medium transition text-center">
+                                    Buyurtma berish
+                                </button>
+                                <button onclick="addToCart('${product.id}')" title="Savatga qo'shish"
+                                    class="w-10 h-10 rounded-full bg-cream-100 hover:bg-rose-soft text-charcoal hover:text-rose-deep flex items-center justify-center transition shrink-0">
+                                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        function filterByCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                if (btn.dataset.category === cat) {
+                    btn.className = 'cat-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap bg-charcoal text-white transition';
+                } else {
+                    btn.className = 'cat-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap bg-white border border-cream-200 text-charcoal hover:bg-cream-100 transition';
+                }
+            });
+            renderProducts();
+        }
+
+        function resetFilters() {
+            currentSearch = '';
+            document.getElementById('search-input-desktop').value = '';
+            document.getElementById('search-input-mobile').value = '';
+            filterByCategory('all');
+        }
+
+        // Kategoriya tugmalari eventlari
+        document.querySelectorAll('.cat-btn').forEach(btn => {
+            btn.addEventListener('click', () => filterByCategory(btn.dataset.category));
+        });
+
+        // Qidiruv inputlari
+        ['search-input-desktop', 'search-input-mobile'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('input', (e) => {
+                    currentSearch = e.target.value;
+                    renderProducts();
+                });
+            }
+        });
+
+        // 5. SAVAT (CART) FUNKSIYALARI
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const existing = cart.find(item => item.id === productId);
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({ ...product, qty: 1 });
+            }
+            saveState();
+            updateCartUI();
+            showToast(`"${product.name}" savatga qo'shildi`);
+        }
+
+        function changeCartQty(productId, delta) {
+            const idx = cart.findIndex(item => item.id === productId);
+            if (idx === -1) return;
+
+            cart[idx].qty += delta;
+            if (cart[idx].qty <= 0) {
+                cart.splice(idx, 1);
+            }
+            saveState();
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const badge = document.getElementById('cart-badge');
+            const container = document.getElementById('cart-items-container');
+            const totalEl = document.getElementById('cart-total-price');
+            const checkoutBtn = document.getElementById('cart-checkout-btn');
+
+            const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+            const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+            badge.textContent = totalCount;
+            totalEl.textContent = formatPrice(totalPrice);
+            checkoutBtn.disabled = cart.length === 0;
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-16">
+                        <i class="fa-solid fa-bag-shopping text-4xl text-cream-300 mb-3"></i>
+                        <p class="font-serif text-xl text-charcoal">Savatingiz hozircha bo'sh</p>
+                        <p class="text-xs text-taupe mt-1">Yoqqan liboslaringizni savatga qo'shing</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = cart.map(item => `
+                <div class="flex items-center gap-3 bg-white p-3 rounded-2xl border border-cream-200">
+                    <img src="${item.image}" onerror="this.src='https://placehold.co/100x120/EFE6D5/2C2A29?text=Libos'" class="w-16 h-20 rounded-xl object-cover bg-cream-100">
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-serif text-base font-bold text-charcoal truncate">${item.name}</h4>
+                        <p class="text-xs text-rose-deep font-semibold mt-0.5">${formatPrice(item.price)}</p>
+                        <div class="flex items-center gap-2 mt-2">
+                            <button onclick="changeCartQty('${item.id}', -1)" class="w-6 h-6 rounded-full bg-cream-100 text-xs font-bold flex items-center justify-center">-</button>
+                            <span class="text-xs font-semibold w-5 text-center">${item.qty}</span>
+                            <button onclick="changeCartQty('${item.id}', 1)" class="w-6 h-6 rounded-full bg-cream-100 text-xs font-bold flex items-center justify-center">+</button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function toggleCartDrawer(open) {
+            const drawer = document.getElementById('cart-drawer');
+            if (open) {
+                updateCartUI();
+                drawer.classList.remove('hidden');
+            } else {
+                drawer.classList.add('hidden');
+            }
+        }
+
+        // 6. BUYURTMA BERISH MODALI
+        function openDirectOrder(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            currentOrderContext = {
+                itemsText: `${product.name} (1 dona)`,
+                total: product.price,
+                fromCart: false
+            };
+            showOrderModal();
+        }
+
+        function openCheckoutModalFromCart() {
+            if (cart.length === 0) return;
+            toggleCartDrawer(false);
+            const itemsText = cart.map(i => `${i.name} (${i.qty} dona)`).join(', ');
+            const total = cart.reduce((sum, i) => sum + i.price * i.qty, 0);
+
+            currentOrderContext = {
+                itemsText,
+                total,
+                fromCart: true
+            };
+            showOrderModal();
+        }
+
+        function showOrderModal() {
+            const box = document.getElementById('order-summary-box');
+            const tgLink = document.getElementById('direct-tg-order-link');
+
+            box.innerHTML = `
+                <p class="font-semibold text-charcoal">Tanlangan libos:</p>
+                <p class="text-taupe">${currentOrderContext.itemsText}</p>
+                <p class="font-bold text-rose-deep pt-1">Jami: ${formatPrice(currentOrderContext.total)}</p>
+            `;
+
+            const tgMessage = encodeURIComponent(`Assalomu alaykum IBO HAYO! Men buyurtma bermoqchi edim:\nLibos: ${currentOrderContext.itemsText}\nNarxi: ${formatPrice(currentOrderContext.total)}`);
+            tgLink.href = `https://t.me/ibohayo_uz?text=${tgMessage}`;
+
+            document.getElementById('order-modal').classList.remove('hidden');
+        }
+
+        function closeOrderModal() {
+            document.getElementById('order-modal').classList.add('hidden');
+        }
+
+        function submitCustomerOrder(e) {
+            e.preventDefault();
+            const name = document.getElementById('cust-name').value.trim();
+            const phone = document.getElementById('cust-phone').value.trim();
+            const note = document.getElementById('cust-note').value.trim();
+
+            const newOrder = {
+                id: 'ORD-' + Math.floor(100 + Math.random() * 900),
+                customer: name,
+                phone: phone,
+                items: currentOrderContext.itemsText,
+                total: currentOrderContext.total,
+                note: note || 'Ko‘rsatilmagan',
+                date: new Date().toLocaleTimeString('uz-UZ', { hour: '2-digit', minute: '2-digit' })
+            };
+
+            orders.unshift(newOrder);
+            if (currentOrderContext.fromCart) {
+                cart = [];
+                updateCartUI();
+            }
+            saveState();
+            closeOrderModal();
+            document.getElementById('order-form').reset();
+            showToast("Buyurtmangiz qabul qilindi! Tez orada bog'lanamiz 🌸");
+        }
+
+        // 7. ADMIN PANEL (KOD: 1066)
+        function openAdminAccess() {
+            if (isAdminAuthenticated) {
+                openAdminDashboard();
+            } else {
+                document.getElementById('admin-pin-input').value = '';
+                document.getElementById('pin-error-msg').classList.add('hidden');
+                document.getElementById('admin-pin-modal').classList.remove('hidden');
+                setTimeout(() => document.getElementById('admin-pin-input').focus(), 100);
+            }
+        }
+
+        function closeAdminPinModal() {
+            document.getElementById('admin-pin-modal').classList.add('hidden');
+        }
+
+        function verifyAdminPin(e) {
+            e.preventDefault();
+            const enteredPin = document.getElementById('admin-pin-input').value.trim();
+            if (enteredPin === '1066') {
+                isAdminAuthenticated = true;
+                closeAdminPinModal();
+                openAdminDashboard();
+                showToast("Admin panelga xush kelibsiz!");
+            } else {
+                document.getElementById('pin-error-msg').classList.remove('hidden');
+                document.getElementById('admin-pin-input').value = '';
+            }
+        }
+
+        function openAdminDashboard() {
+            renderAdminLists();
+            document.getElementById('admin-dashboard-modal').classList.remove('hidden');
+        }
+
+        function closeAdminDashboard() {
+            document.getElementById('admin-dashboard-modal').classList.add('hidden');
+        }
+
+        function logoutAdmin() {
+            isAdminAuthenticated = false;
+            closeAdminDashboard();
+            showToast("Admin paneldan chiqildi");
+        }
+
+        function switchAdminTab(tab) {
+            const prodTab = document.getElementById('admin-tab-products');
+            const ordTab = document.getElementById('admin-tab-orders');
+            const btnProd = document.getElementById('tab-btn-products');
+            const btnOrd = document.getElementById('tab-btn-orders');
+
+            if (tab === 'products') {
+                prodTab.classList.remove('hidden');
+                ordTab.classList.add('hidden');
+                btnProd.className = 'admin-tab-btn pb-2.5 text-xs sm:text-sm font-semibold border-b-2 border-charcoal text-charcoal';
+                btnOrd.className = 'admin-tab-btn pb-2.5 text-xs sm:text-sm font-medium border-b-2 border-transparent text-taupe hover:text-charcoal';
+            } else {
+                prodTab.classList.add('hidden');
+                ordTab.classList.remove('hidden');
+                btnOrd.className = 'admin-tab-btn pb-2.5 text-xs sm:text-sm font-semibold border-b-2 border-charcoal text-charcoal';
+                btnProd.className = 'admin-tab-btn pb-2.5 text-xs sm:text-sm font-medium border-b-2 border-transparent text-taupe hover:text-charcoal';
+            }
+        }
+
+        function handleImageFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('prod-image-url').value = e.target.result;
+                showToast("Rasm yuklandi!");
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function saveAdminProduct(e) {
+            e.preventDefault();
+            const id = document.getElementById('edit-prod-id').value;
+            const name = document.getElementById('prod-name').value.trim();
+            const price = Number(document.getElementById('prod-price').value);
+            const category = document.getElementById('prod-category').value;
+            const sizes = document.getElementById('prod-sizes').value.trim() || 'S, M, L';
+            const image = document.getElementById('prod-image-url').value.trim() || 'https://placehold.co/600x750/EFE6D5/2C2A29?text=IBO+HAYO';
+            const description = document.getElementById('prod-desc').value.trim();
+
+            if (id) {
+                const index = products.findIndex(p => p.id === id);
+                if (index !== -1) {
+                    products[index] = { id, name, price, category, sizes, image, description };
+                    showToast("Libos ma'lumotlari yangilandi!");
+                }
+            } else {
+                const newProd = {
+                    id: 'p-' + Date.now(),
+                    name,
+                    price,
+                    category,
+                    sizes,
+                    image,
+                    description
+                };
+                products.unshift(newProd);
+                showToast("Yangi libos saytga qo'shildi!");
+            }
+
+            saveState();
+            resetAdminForm();
+            renderProducts();
+            renderAdminLists();
+        }
+
+        function editAdminProduct(id) {
+            const p = products.find(item => item.id === id);
+            if (!p) return;
+
+            document.getElementById('edit-prod-id').value = p.id;
+            document.getElementById('prod-name').value = p.name;
+            document.getElementById('prod-price').value = p.price;
+            document.getElementById('prod-category').value = p.category;
+            document.getElementById('prod-sizes').value = p.sizes;
+            document.getElementById('prod-image-url').value = p.image;
+            document.getElementById('prod-desc').value = p.description || '';
+
+            document.getElementById('admin-form-title').textContent = 'Libosni tahrirlash';
+            document.getElementById('cancel-edit-btn').classList.remove('hidden');
+        }
+
+        function deleteAdminProduct(id) {
+            products = products.filter(p => p.id !== id);
+            saveState();
+            renderProducts();
+            renderAdminLists();
+            showToast("Libos o'chirildi");
+        }
+
+        function resetAdminForm() {
+            document.getElementById('admin-product-form').reset();
+            document.getElementById('edit-prod-id').value = '';
+            document.getElementById('admin-form-title').textContent = "Yangi libos qo'shish";
+            document.getElementById('cancel-edit-btn').classList.add('hidden');
+        }
+
+        function resetDefaultCatalog() {
+            products = [...DEFAULT_PRODUCTS];
+            saveState();
+            renderProducts();
+            renderAdminLists();
+            showToast("Katalog standart holatga qaytarildi");
+        }
+
+        function renderAdminLists() {
+            document.getElementById('admin-prod-count').textContent = products.length;
+            document.getElementById('admin-order-count').textContent = orders.length;
+
+            const prodList = document.getElementById('admin-products-list');
+            prodList.innerHTML = products.map(p => `
+                <div class="flex items-center justify-between gap-3 bg-white p-3 rounded-2xl border border-cream-200">
+                    <div class="flex items-center gap-3 min-w-0">
+                        <img src="${p.image}" onerror="this.src='https://placehold.co/80x100/EFE6D5/2C2A29?text=Libos'" class="w-12 h-14 rounded-xl object-cover bg-cream-100 shrink-0">
+                        <div class="min-w-0">
+                            <h5 class="font-serif text-base font-bold text-charcoal truncate">${p.name}</h5>
+                            <p class="text-xs text-taupe">${p.category} • <strong class="text-rose-deep">${formatPrice(p.price)}</strong></p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-1.5 shrink-0">
+                        <button onclick="editAdminProduct('${p.id}')" title="Tahrirlash" class="w-8 h-8 rounded-full bg-cream-100 hover:bg-charcoal hover:text-white text-charcoal text-xs flex items-center justify-center transition">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button onclick="deleteAdminProduct('${p.id}')" title="O'chirish" class="w-8 h-8 rounded-full bg-rose-soft hover:bg-red-600 hover:text-white text-rose-deep text-xs flex items-center justify-center transition">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+
+            const ordList = document.getElementById('admin-orders-list');
+            if (orders.length === 0) {
+                ordList.innerHTML = `<p class="text-sm text-taupe">Hozircha buyurtmalar yo'q.</p>`;
+            } else {
+                ordList.innerHTML = orders.map(o => `
+                    <div class="bg-white p-4 rounded-2xl border border-cream-200 space-y-1.5">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-0.5 rounded-full bg-cream-100 text-[11px] font-bold text-charcoal">${o.id}</span>
+                            <span class="text-[11px] text-taupe">${o.date}</span>
+                        </div>
+                        <p class="font-bold text-sm text-charcoal">${o.customer} — <a href="tel:${o.phone}" class="text-rose-deep underline">${o.phone}</a></p>
+                        <p class="text-xs text-charcoal bg-cream-50 p-2 rounded-xl">${o.items}</p>
+                        <div class="flex items-center justify-between pt-1 text-xs">
+                            <span class="text-taupe">Manzil/Izoh: ${o.note}</span>
+                            <span class="font-bold text-charcoal">${formatPrice(o.total)}</span>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // 8. MAYIN BOUTIQUE FON MUSIQASI & QUSHCHA SAYRASHI (WEB AUDIO API)
+        let audioCtx = null;
+        let isMusicPlaying = false;
+        let melodyInterval = null;
+        let noteStep = 0;
+
+        // Nafis arfa / pianino akkordlari (F major / D minor lirik ohang)
+        const boutiqueNotes = [
+            349.23, 440.00, 523.25, 659.25, // Fmaj7
+            293.66, 349.23, 440.00, 523.25, // Dm7
+            233.08, 349.23, 440.00, 523.25, // Bbmaj7
+            261.63, 392.00, 493.88, 587.33  // Csus
+        ];
+
+        function initAudioContext() {
+            if (!audioCtx) {
+                const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+                audioCtx = new AudioContextClass();
+            }
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+        }
+
+        function playSoftNote(freq) {
+            if (!audioCtx || !isMusicPlaying) return;
+            const now = audioCtx.currentTime;
+
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq, now);
+
+            gain.gain.setValueAtTime(0.0001, now);
+            gain.gain.exponentialRampToValueAtTime(0.045, now + 0.12);
+            gain.gain.exponentialRampToValueAtTime(0.0001, now + 1.8);
+
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc.start(now);
+            osc.stop(now + 1.85);
+        }
+
+        // Qushcha sayrashi (chirp) tovushi
+        function playBirdChirp() {
+            initAudioContext();
+            const now = audioCtx.currentTime;
+
+            [0, 0.16].forEach((delay, idx) => {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+
+                const startFreq = idx === 0 ? 2200 : 2500;
+                const endFreq = idx === 0 ? 3100 : 3400;
+
+                osc.frequency.setValueAtTime(startFreq, now + delay);
+                osc.frequency.exponentialRampToValueAtTime(endFreq, now + delay + 0.06);
+                osc.frequency.exponentialRampToValueAtTime(startFreq * 0.9, now + delay + 0.12);
+
+                gain.gain.setValueAtTime(0.0001, now + delay);
+                gain.gain.exponentialRampToValueAtTime(0.04, now + delay + 0.03);
+                gain.gain.exponentialRampToValueAtTime(0.0001, now + delay + 0.13);
+
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+
+                osc.start(now + delay);
+                osc.stop(now + delay + 0.14);
+            });
+        }
+
+        function toggleAmbientMusic() {
+            initAudioContext();
+            isMusicPlaying = !isMusicPlaying;
+
+            const playIcon = document.getElementById('music-play-icon');
+            const statusText = document.getElementById('music-status-text');
+            const birdSvg = document.getElementById('mascot-bird-svg');
+            const note1 = document.getElementById('note-1');
+            const note2 = document.getElementById('note-2');
+
+            if (isMusicPlaying) {
+                playIcon.className = 'fa-solid fa-pause text-xs';
+                statusText.textContent = 'Mayin kuy yangramoqda...';
+                birdSvg.classList.add('bird-singing');
+                note1.classList.remove('hidden');
+                note2.classList.remove('hidden');
+
+                playBirdChirp();
+                playSoftNote(boutiqueNotes[noteStep % boutiqueNotes.length]);
+                noteStep++;
+
+                melodyInterval = setInterval(() => {
+                    playSoftNote(boutiqueNotes[noteStep % boutiqueNotes.length]);
+                    if (noteStep % 8 === 0) playBirdChirp();
+                    noteStep++;
+                }, 650);
+            } else {
+                playIcon.className = 'fa-solid fa-play text-xs ml-0.5';
+                statusText.textContent = 'Tinglash uchun bosing';
+                birdSvg.classList.remove('bird-singing');
+                note1.classList.add('hidden');
+                note2.classList.add('hidden');
+                clearInterval(melodyInterval);
+            }
+        }
+
+        // Qushchani bosganda sayrashi va shirin gaplar aytishi
+        const birdPhrases = [
+            "Chik-chirik! 🕊️ Bugun juda go'zal ko'rinasiz!",
+            "Yangi kolleksiyamizdagi ko'ylaklarni ko'rdingizmi? ✨",
+            "Savolingiz bo'lsa @ibohayo_uz Telegramiga yozing! 💬",
+            "Nafislik — har bir ayolga yarashadi 🌸",
+            "Instagram sahifamizga ham obuna bo'ling: @ibo_hayo_ 💕"
+        ];
+        let phraseIdx = 0;
+
+        function petTheBird() {
+            playBirdChirp();
+            const bubble = document.getElementById('bird-bubble');
+            const msg = document.getElementById('bird-message');
+            msg.textContent = birdPhrases[phraseIdx % birdPhrases.length];
+            phraseIdx++;
+            bubble.classList.remove('hidden');
+        }
+
+        function hideBirdBubble() {
+            document.getElementById('bird-bubble').classList.add('hidden');
+        }
+
+        // 9. PWA (PROGRESSIVE WEB APP) MANIFEST, SERVICE WORKER VA O'RNATISH LOGIKASI
+        let deferredInstallPrompt = null;
+
+        function generateAppIconDataUrl() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 512;
+            canvas.height = 512;
+            const ctx = canvas.getContext('2d');
+
+            // Fon gradyenti
+            const grad = ctx.createLinearGradient(0, 0, 512, 512);
+            grad.addColorStop(0, '#FDFBF7');
+            grad.addColorStop(1, '#EFE6D5');
+            ctx.fillStyle = grad;
+            ctx.fillRect(0, 0, 512, 512);
+
+            // Oltin/bej hoshiya
+            ctx.strokeStyle = '#d4a373';
+            ctx.lineWidth = 18;
+            ctx.strokeRect(28, 28, 456, 456);
+
+            // Markaziy matn: IBO HAYO
+            ctx.fillStyle = '#2C2A29';
+            ctx.font = 'bold 74px Georgia, serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('IBO HAYO', 256, 235);
+
+            ctx.fillStyle = '#9E6B6B';
+            ctx.font = '600 26px sans-serif';
+            ctx.fillText('MODEST FASHION', 256, 305);
+
+            return canvas.toDataURL('image/png');
+        }
+
+        function initPwaSupport() {
+            try {
+                const iconUrl = generateAppIconDataUrl();
+                const manifest = {
+                    name: 'IBO HAYO — Nafis Ayollar Liboslari',
+                    short_name: 'IBO HAYO',
+                    description: 'Zamonaviy va iboli ayollar uchun nafis liboslar do‘koni',
+                    start_url: window.location.href,
+                    display: 'standalone',
+                    background_color: '#ffffff',
+                    theme_color: '#d4a373',
+                    icons: [
+                        {
+                            src: iconUrl,
+                            sizes: '512x512',
+                            type: 'image/png',
+                            purpose: 'any maskable'
+                        }
+                    ]
+                };
+
+                const manifestBlob = new Blob([JSON.stringify(manifest)], { type: 'application/manifest+json' });
+                const manifestUrl = URL.createObjectURL(manifestBlob);
+                document.getElementById('pwa-manifest-link').setAttribute('href', manifestUrl);
+
+                // Inline Service Worker ro'yxatdan o'tkazish
+                if ('serviceWorker' in navigator) {
+                    const swCode = `
+                        self.addEventListener('install', (e) => self.skipWaiting());
+                        self.addEventListener('activate', (e) => e.waitUntil(self.clients.claim()));
+                        self.addEventListener('fetch', (e) => {});
+                    `;
+                    const swBlob = new Blob([swCode], { type: 'application/javascript' });
+                    const swUrl = URL.createObjectURL(swBlob);
+                    navigator.serviceWorker.register(swUrl).catch(() => {});
+                }
+            } catch (err) {
+                console.warn('PWA init warning:', err);
+            }
+        }
+
+        // Google Chrome / Android native install hodisasini ushlash
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            const nativeBox = document.getElementById('native-prompt-box');
+            if (nativeBox) nativeBox.classList.remove('hidden');
+        });
+
+        window.addEventListener('appinstalled', () => {
+            deferredInstallPrompt = null;
+            dismissInstallBanner();
+            closePwaModal();
+            showToast("IBO HAYO ilovasi telefoningizga muvaffaqiyatli o'rnatildi! 🎉");
+        });
+
+        async function triggerAppInstall() {
+            if (deferredInstallPrompt) {
+                await executeNativeInstall();
+            } else {
+                document.getElementById('pwa-install-modal').classList.remove('hidden');
+            }
+        }
+
+        async function executeNativeInstall() {
+            if (!deferredInstallPrompt) {
+                document.getElementById('pwa-install-modal').classList.remove('hidden');
+                return;
+            }
+            deferredInstallPrompt.prompt();
+            const { outcome } = await deferredInstallPrompt.userChoice;
+            if (outcome === 'accepted') {
+                deferredInstallPrompt = null;
+                closePwaModal();
+            }
+        }
+
+        function closePwaModal() {
+            document.getElementById('pwa-install-modal').classList.add('hidden');
+        }
+
+        function dismissInstallBanner() {
+            const banner = document.getElementById('mobile-install-banner');
+            if (banner) banner.classList.add('hidden');
+        }
+
+        function downloadStandaloneHtml() {
+            try {
+                const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+                const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'IBO-HAYO-App.html';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                showToast("Sayt fayli yuklab olindi! 📥");
+            } catch (e) {
+                showToast("Faylni yuklashda xatolik yuz berdi", "error");
+            }
+        }
+
+        // 10. SAHIFA YUKLANGANDA ISHGA TUSHIRISH
+        window.addEventListener('DOMContentLoaded', () => {
+            initPwaSupport();
+            renderProducts();
+            updateCartUI();
+        });
+    </script>
+
+</body></html>
